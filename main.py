@@ -1,4 +1,14 @@
-
+##############################################################
+# main.py - Version 0.6.2    T.Burgmann Sept 22/2022
+# Test OTA from Github
+##############################################################
+#
+#    rshell -p COM
+#    rm /pyboard/main.py
+#    rsync -m \ota1 /pyboard
+#
+##############################################################
+from rtns import SUBRTNSBW
 
 def connectToWifiAndUpdate():
     import time, machine, network, gc, app.secrets as secrets
