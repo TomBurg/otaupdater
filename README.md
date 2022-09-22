@@ -2,7 +2,7 @@
 
 This micropython module allows for automatic updating of your code on Microcontrollers using github releases. It allows you to update devices in the field with ease. 
 
-> Note: due to a bug in the SSL library of ESP8266 devices, micropython-ota-updater cannot be used on these devices. See https://github.com/rdehuyss/micropython-ota-updater/issues/6 and https://github.com/micropython/micropython/issues/6737
+> Note: due to a bug in the SSL library of ESP8266 devices, micropython-ota-updater cannot be used on these devices. See https://github.com/TomBurg/ota-updater/issues/6 and https://github.com/micropython/micropython/issues/6737
 
 ## History
 - 2018/07/19 - First public release
@@ -13,7 +13,7 @@ This micropython module allows for automatic updating of your code on Microcontr
 The workflow is as follows:
 * You have a github repo where you host your micropython project
 * In this project, you include all your source code in a certain folder (e.g. `app`)
-* You also include the ota_updater.py (https://github.com/rdehuyss/micropython-ota-updater)
+* You also include the ota_updater.py (https://github.com/TomBurg/ota-updater)
 * You control your releases with GitHub releases (if you want to deploy a new version, create a new GitHub release)
 
 There are now two different ways to update your code:
@@ -82,7 +82,7 @@ MicroPython OTA updater now also supports a secret file (which is added to .giti
 WIFI_SSID='your-ssid'
 WIFI_PASSWORD='your-password'
 ```
-See [main.py](https://github.com/rdehuyss/micropython-ota-updater/blob/master/main.py) on how it is then used.
+See [main.py](https://github.com/TomBurg/ota-updater/blob/master/main.py) on how it is then used.
 
 
 ## More info?
@@ -90,4 +90,3 @@ See the [article on Medium](https://medium.com/@ronald.dehuysser/micropython-ota
 
 ## Example
 - [Showerloop](https://github.com/rdehuyss/showerloop/blob/master/main.py) uses the micropython-ota-updater to get the latest release.
-- [Chicken Shed Mgr](https://github.com/rdehuyss/chicken-shed-mgr/blob/main/src/main.py) uses the micropython-ota-updater to get the latest release.
