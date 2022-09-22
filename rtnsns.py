@@ -15,17 +15,7 @@ import network
 from machine import Pin, I2C
 from machine import Pin, PWM
 
-ssid_ = "R"
-wp2_pass = "R0"
 
-ssidhot_ = "R"
-wp2hot_pass = "ro"
-
-ssidpshot_ = "P"
-wp2pshot_pass = "Pr"
-
-ssidproshred_ = "PP"
-ssidproshred_pass = "Pr"
 
 smoke = False
 carbmono = False
