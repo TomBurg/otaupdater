@@ -1,10 +1,12 @@
-from rtns import SUBRTNSBW
+from rtnsns import SUBRTNSBW
+import time
 
 sub = SUBRTNSBW(50)
 
-sub.blink_cnt(5)
-print('Version 2 XXX installed using USB') 
+print('Version Tag 0.6.4 installed using otaupdater') 
+sub.blink_cnt(3)
 
-print('Version YYY installed ') 
-
-print('Version ZZZ installed ') 
+sub.Redon()
+print("  Congratulations if you can read this  ")
+time.sleep(5)
+sub.Redoff()
